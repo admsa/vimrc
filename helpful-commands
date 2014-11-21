@@ -1,0 +1,21 @@
+Changing file permissions
+If you have shell access to your server, you can change file permissions recursively with the following command:
+
+For Directories:
+find /path -type d -exec chmod 755 {} \;
+
+For Files:
+find /path -type f -exec chmod 644 {} \;
+
+Dump mysql file
+mysqldump -udb_user -pdb_password db_name | gzip > db_name.sql.gz
+
+Zcat file to database
+zcat db_name.sql.gz | mysql -udb_user -pdb_password -hdb_host db_name
+
+Creating database and database user
+
+create database db_name;
+create user 'db_user'@'localhost' identified by 'db_password';
+grant all privileges on db_name.* to 'db_user'@'localhost' identified by 'db_password';
+flush privileges;
