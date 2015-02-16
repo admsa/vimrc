@@ -1,3 +1,37 @@
+" vimrc setup using janus vim
+set t_Co=256
+
+let mapleader = ","
+let g:mapleader = ","
+
+nmap <leader>w :w!<cr>
+imap jj <esc>
+
+set laststatus=2
+colorscheme xoria256
+
+set ts=4 sw=4 ai nu et nowrap
+set encoding=utf-8
+
+" autocmd BufWritePre *.php :%s/\s\+\$//e
+
+nmap <C-v> : vertical resize +5<cr>
+" nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
+
+" To make vsplit put the new buffer on the right of the current buffer:
+"
+" set splitright
+" set splitbelow
+"
+" Though you can press Ctrl-W r to swap windows than.
+
+" plugins installed under ~/.janus
+" auto-pairs  vdebug  vim-airline
+
+" --------------------------------------------------------------------------------
+
+
+
 " Ubuntu vimrc setup
 " Installed vim plugins under ~/.vim/bundle
 " auto-pairs, nerdtree vim-airline vim-colorschemes
