@@ -28,6 +28,9 @@ nmap <C-v> : vertical resize +5<cr>
 " plugins installed under ~/.janus
 " auto-pairs  vdebug  vim-airline
 
+" disable gundo under .vimrc.before when adding vdebug
+" call janus#disable_plugin('gundo')
+
 " --------------------------------------------------------------------------------
 
 
